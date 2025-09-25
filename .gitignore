@@ -1,0 +1,44 @@
+# .NET Core
+bin/
+obj/
+out/
+*.user
+*.suo
+*.cache
+*.docstates
+*.userprefs
+*.dll
+*.pdb
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Visual Studio
+.vs/
+.vscode/
+*.sln.cache
+
+# Rider
+.idea/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Node.js (if any)
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+logs/
+*.log
