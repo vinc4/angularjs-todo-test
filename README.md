@@ -2,7 +2,7 @@
 
 A full-stack todo application built with AngularJS frontend and .NET Core 9.0 backend API.
 
-## 🚀 Features
+## Features
 
 - **Frontend**: AngularJS 1.8.2 with Bootstrap 5.3 styling
 - **Backend**: .NET Core 9.0 Web API with Entity Framework Core
@@ -11,7 +11,7 @@ A full-stack todo application built with AngularJS frontend and .NET Core 9.0 ba
 - **Architecture**: Clean service layer pattern with dependency injection
 - **CORS**: Configured for cross-origin requests
 
-## 📋 API Endpoints
+## API Endpoints
 
 The backend provides full CRUD operations:
 
@@ -21,13 +21,13 @@ The backend provides full CRUD operations:
 - `PUT /api/todos/{id}` - Update existing todo
 - `DELETE /api/todos/{id}` - Delete todo
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 - .NET 9.0 SDK or later
 - Python 3.x (for frontend development server)
 - Git
 
-## 🏃‍♂️ Running the Application
+## Running the Application
 
 ### Backend (.NET Core API)
 
@@ -58,7 +58,7 @@ The backend provides full CRUD operations:
 
 2. Open your browser and navigate to: `http://localhost:8000`
 
-## 🗄️ Database
+## Database
 
 The application uses SQLite with Entity Framework Core. The database will be automatically created with seed data when you first run the backend.
 
@@ -71,7 +71,7 @@ The application comes with 5 default todos:
 - Connect frontend to backend
 - Deploy the application
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 angularjs-todo-test-main/
