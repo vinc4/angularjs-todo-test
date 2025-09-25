@@ -2,16 +2,16 @@
 
 A modern AngularJS 1.8.2 todo application with professional UI and service-based architecture.
 
-## 🎯 Features
+## Features
 
-- ✅ **CRUD Operations**: Create, Read, Update, Delete todos
-- ✅ **Service Architecture**: Separated concerns with TodoService
-- ✅ **Error Handling**: User-friendly error messages
-- ✅ **Loading States**: Visual feedback during API calls
-- ✅ **Responsive Design**: Bootstrap 5.3 with custom styling
-- ✅ **Professional UI**: Modern gradient design with animations
+- **CRUD Operations**: Create, Read, Update, Delete todos
+- **Service Architecture**: Separated concerns with TodoService
+- **Error Handling**: User-friendly error messages
+- **Loading States**: Visual feedback during API calls
+- **Responsive Design**: Bootstrap 5.3 with custom styling
+- **Professional UI**: Modern gradient design with animations
 
-## 📁 File Structure
+## File Structure
 
 ```
 frontend/
@@ -24,7 +24,7 @@ frontend/
     └── todoService.js      # API service layer
 ```
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Method 1: Python HTTP Server
 ```bash
@@ -50,7 +50,7 @@ php -S localhost:8000
 
 Then visit: **http://localhost:8000**
 
-## 🔧 Configuration
+## Configuration
 
 ### API Integration
 
@@ -59,21 +59,21 @@ The app is currently configured to use JSONPlaceholder for demo data. To connect
 1. Open `services/todoService.js`
 2. Update the `API_BASE_URL`:
    ```javascript
-   var API_BASE_URL = 'http://localhost:5000/api'; // Your backend API
+   var API_BASE_URL = 'http://localhost:5000/api';
    ```
 
 ### CORS Requirements
 
 Your backend must enable CORS for the frontend domain:
 ```csharp
-// In your .NET Core backend
+
 app.UseCors(policy => policy
-    .WithOrigins("http://localhost:8000") // Frontend URL
+    .WithOrigins("http://localhost:8000") 
     .AllowAnyMethod()
     .AllowAnyHeader());
 ```
 
-## 🏗 Architecture
+## Architecture
 
 ### Service Layer (`services/todoService.js`)
 - **getAllTodos()**: Fetch all todos
@@ -89,7 +89,7 @@ app.UseCors(policy => policy
 - **$scope.toggleAll()**: Toggle all todos
 - **$scope.clearCompleted()**: Clear completed todos
 
-## 🎨 UI Components
+## UI Components
 
 - **Loading Spinner**: Shows during API calls
 - **Error Messages**: Dismissible alerts for errors
@@ -97,20 +97,20 @@ app.UseCors(policy => policy
 - **Action Buttons**: Toggle all, clear completed
 - **Statistics**: Todo counts display
 
-## 🛠 Dependencies
+## Dependencies
 
 - **AngularJS 1.8.2**: Core framework
 - **Bootstrap 5.3.0**: UI framework
 - **Bootstrap Icons 1.10.0**: Icon library
 
-## 📱 Responsive Design
+## Responsive Design
 
 - Mobile-friendly layout
 - Responsive breakpoints
 - Touch-friendly buttons
 - Accessible form controls
 
-## 🔍 Testing
+## Testing
 
 ### Manual Testing Checklist
 - [ ] Add new todo
@@ -122,7 +122,7 @@ app.UseCors(policy => policy
 - [ ] Error handling (disconnect internet)
 - [ ] Loading states visible
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -141,22 +141,3 @@ app.UseCors(policy => policy
 **4. HTTP Server Issues**
 - Use `python -m http.server` instead of opening file directly
 - Modern browsers require HTTP server for AngularJS
-
-## 🔗 Integration Notes
-
-When connecting to your .NET Core backend:
-
-1. **Update API URL** in TodoService
-2. **Ensure CORS** is configured in backend
-3. **Match data models** between frontend and backend
-4. **Handle authentication** if required
-5. **Test all endpoints** with your backend
-
-## 📋 Next Steps
-
-- [ ] Connect to .NET Core backend
-- [ ] Add todo editing functionality
-- [ ] Implement todo categories/tags
-- [ ] Add todo due dates
-- [ ] Implement user authentication
-- [ ] Add todo search/filter
